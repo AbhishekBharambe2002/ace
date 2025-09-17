@@ -18,34 +18,45 @@ Form validation with Formik + Yup
 
 REST API backend + React UI frontend
 
-# Navigate to backend
-cd backend
+1. Clone the repository
+git clone https://github.com/your-username/Employee-Department-App.git
+cd Employee-Department-App
 
-# Install dependencies
+2. Install dependencies for the backend
+cd backend
 npm install
 
-# Create .env file
-cat > .env <<EOL
+3. Install dependencies for the frontend
+cd ../frontend
+npm install
+
+4. Set up environment variables
+Backend .env
+
+Create a .env file inside the backend directory:
+
 PORT=5000
 MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/your-db
-EOL
 
-# Run in development
+Frontend .env
+
+Create a .env file inside the frontend directory:
+
+REACT_APP_API_URL=http://localhost:5000/api/v1
+
+5. Run the application
+Run backend (development):
+cd backend
 npm run dev
 
 
-# Navigate to frontend
+Backend will be available at 👉 http://localhost:5000
+
+Run frontend (development):
 cd frontend
-
-# Install dependencies
-npm install
-
-# Create .env file
-cat > .env <<EOL
-REACT_APP_API_URL=http://localhost:5000/api/v1
-EOL
-
-# Run in development
 npm start
+
+
+Frontend will be available at 👉 http://localhost:3000
 
 
