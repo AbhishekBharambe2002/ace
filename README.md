@@ -17,7 +17,7 @@ Country/State/City selection via external API
 Form validation with Formik + Yup
 
 REST API backend + React UI frontend
-
+```bash
 1. Clone the repository
 git clone https://github.com/your-username/Employee-Department-App.git
 cd Employee-Department-App
@@ -55,7 +55,7 @@ Backend will be available at 👉 http://localhost:5000
 Run frontend (development):
 cd frontend
 npm start
-
+```
 
 Frontend will be available at 👉 http://localhost:3000
 
